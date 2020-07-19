@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+table, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+header {
+    color: black;
+    background-color:#d7b38c;
+    text-align: center;
+height: 100px;
+  width: 50%;
+}
+</style>
+
+<center><header><img src="download.png" width="350" height="35" align="LEFTDOWN"><h1>Calypso Acess Form</h1></header></center><br><br>
+
+<form method="GET" id="my_form"></form>
+
+<table cellpadding="4" width="50%" bgcolor="#d7b38c" align="center" cellspacing="7">
+   <tr>
+    <td>RequesterName</td>
+    <td><input type="text" name="ReqName"  id="ReqName" size="20"  ></td>
+    <td>RequesterEmail</td>
+<td><input type="text" name="ReqEmail"  id="ReqEmail" size="20"  ></td>
+  </tr>
+  <tr>
+    <td>Request Number</td>
+    <td><input type="text" name="ReqId"  id="ReqId" size="20"  ></td>
+    <td>RequestDate</td>
+<td><input type="date" name="ReqDate"  id="ReqDate" size="20"  ></td>
+  </tr>
+</table>
+<br>
+
+<table cellpadding="4" width="50%" bgcolor="#d7b38c" align="center" cellspacing="7">
+  <tr>
+  <td colspan=4>
+  <center><font size=4><b>Type of Request</b></font></center>
+  </td>
+  </tr>
+<tr>
+    <td>Request Type</td>
+    <td> <select name="select" id="select">
+    <option value="select">Select</option>
+    <option value="back">Back office</option>
+      </select></td>
+    <td>If Replace or Transfer</td>
+<td><input type="text" name="RIsTrfusr"  id="RIsTrfusr" size="20"  ></td>
+  </tr>
+  <tr>
+    <td>Acess Type</td>
+<td><input type="checkbox" value="AccTypeProd" size="10">Production<br><input type="checkbox" value="AccTypeUat" size="10">UAT<br><input type="checkbox" value="AccTypeDev" size="10">DEV<br></td>
+    <td>BusinessRationale</td>
+<td><textarea id="BusiRati" name="BusiRati" rows="4" cols="40"></textarea></td>
+  </tr>
+</table>
+
+<br>
+<table cellpadding="8" width="50%" bgcolor="#d7b38c" align="center" 
+<tr>
+  <td colspan=4>
+  <center><font size=4><b>User Details</b></font></center>
+  </td>
+  </tr>
+   <tr>
+    <td>UserName</td>
+    <td><input type="text" name="UsrName"  id="UsrName" size="20"  ></td>
+    <td>Location</td>
+<td><input type="text" name="Location"  id="" size="20"  ></td>
+  </tr>
+  <tr>
+    <td>WindowsID (Domain\ID)</td>
+    <td><input type="text" name="WindowId"  id="WindowId" size="20"  ></td>
+    <td>Role</td>
+    <td> <select name="select" id="Roles">
+    <option value="Roles">Roles</option>
+    <option value="back">Back office</option>
+      </select></td>
+  </tr>
+<tr>
+    <td>UserEmailID</td>
+    <td><input type="text" name="UsrEmail"  id="UsrEmail" size="20"  ></td>
+    <td>If others</td>
+<td><input type="text" name="ReqEmail"  id="ReqEmail" size="20"  ></td>
+  </tr>
+<tr>
+    <td>ManagerName</td>
+    <td><input type="text" name="MgrName"  id="MgrName" size="20"  ></td>
+    <td>Cost Center</td>
+<td><input type="text" name="CostCenter"  id="CostCenter" size="20"  ></td>
+  </tr>
+</table><br>
+<table cellpadding="8" width="50%" bgcolor="#d7b38c" align="center" cellspacing="7">
+  <tr>
+  <td colspan=4>
+  <center><font size=4><b>Permission Department(Please select One)</b></font></center>
+  </td>
+  </tr>
+<tr>    
+<td><input type="radio" name="CMG" value="CMG" size="10">CMG
+  <input type="radio" name="CC" value="CC" size="10">CC
+<input type="radio" name="FrontOffice" value="FrontOffice" size="10">FrontOffice
+  <input type="radio" name="BackOffice" value="BackOffice" size="10">BackOffice
+<input type="radio" name="MarketRisk" value="MarketRisk" size="10">MarketRisk
+  <input type="radio" name="CLM" value="CLM" size="10">CLM
+<input type="radio" name="GMO" value="GMO" size="10">GMO
+<input type="radio" name="Others" value="Others" size="10">Others
+</td>
+  </tr>
+</table>
+<table cellpadding="8" width="50%" bgcolor="#d7b38c" align="center" cellspacing="7">
+<tr>
+<td>Reference User(If any)</td>
+<td><input type="text" name="Ref"  id="Ref" size="20"  ></td></tr></table>
+
+<table cellpadding="8" width="50%" bgcolor="#d7b38c" align="center" cellspacing="7">
+<tr>
+<td>Comments</td>
+<td><input type="text" name="Comm"  id="comm" size="20"  ></td></tr><br>
+<tr>
+<td colspan=2>
+  <center><input type="submit" value="Submit"></td></center>
+
+  </tr></table>
+</body>
+</html>
+
